@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Mukta', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #f1f3f5;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #f1f1f1;
+  position: relative;
+}
+
+.menu {
+  width: 70rem;
+  height: 70rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu-btn {
+  width: 15rem;
+  height: 15rem;
+  background-color: #23c08c;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  border-radius: 50%;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0.5rem 2rem rgba(35, 192, 140, 0.4);
+  cursor: pointer;
+  z-index: 100;
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.menu-btn:hover {
+  background-color: #1c9a70;
+}
+
+.change .menu-btn span:nth-child(1) {
+  display: none;
+}
+
+.menu-btn span:nth-child(2) {
+  display: none;
+}
+
+.change .menu-btn span:nth-child(2) {
+  display: flex;
+}
+
+.navigation a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12rem;
+  height: 12rem;
+  background-color: #23c08c;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0.5rem 2rem rgba(35, 192, 140, 0.4);
+  transition: all 0.2s cubic-bezier(1, 0, 0, 1),
+    background-color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.change .navigation a:nth-child(1) {
+  top: 15%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s cubic-bezier(1, 0, 0, 1), background-color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  background-color: #20ad7e;
+}
+
+.change .navigation a:nth-child(1):hover {
+  background-color: #23c08c;
+  ;
+}
+
+.change .navigation a:nth-child(2) {
+  top: 20%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s 0.1s cubic-bezier(1, 0, 0, 1),
+    background-color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  background-color: #1c9a70;
+}
+
+
+.change .navigation a:nth-child(2):hover {
+  background-color: #23c08c;
+}
+
+.change .navigation a:nth-child(3) {
+  top: 60%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s 0.2s cubic-bezier(1, 0, 0, 1),
+    background-color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  background-color: #198662;
+}
+
+.change .navigation a:nth-child(3):hover {
+  background-color: #23c08c;
+}
+
+.change .navigation a:nth-child(4) {
+  top: 85%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s 0.3s cubic-bezier(1, 0, 0, 1),
+    background-color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  background-color: #157354;
+}
+
+.change .navigation a:nth-child(4):hover {
+  background-color: #23c08c;
+}
+
+.change .navigation a:nth-child(5) {
+  top: 45%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s 0.4s cubic-bezier(1, 0, 0, 1),
+    background-color 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  background-color: #126046;
+}
+
+.change .navigation a:nth-child(5):hover {
+  background-color: #23c08c;
+}
